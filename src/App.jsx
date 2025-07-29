@@ -4,13 +4,17 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+  const [count, setCount] = useState(0)
   const handleClick = () => {
-    console.log('Button clicked');
+    setCount (count + 1);
   }
 
   return (
     <>
       <button onClick={handleClick}>Show animal list here</button>
+      <div>
+        <p>Number of animals : {count}</p>
+      </div>
     </>
   )
 }
