@@ -4,10 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const handleClick = () => {
-    setCount (count + 1);
+  // const [count, setCount] = useState(0)
+  // const handleClick = () => {
+  //   setCount (count + 1);
+  // }
+  function makeArray(){
+    return [1, 10, 32, 40]
   }
+
+  const [firstElement, secondElement] = makeArray();
+  console.log(firstElement, secondElement)
 
   return (
     <>
